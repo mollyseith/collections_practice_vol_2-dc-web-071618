@@ -1,9 +1,7 @@
 def begins_with_r(element)
-  ret = true
   if element.start_with?("r")
-    ret
+    true
   else
-    ret = false
-    ret
+    false
   end
 end
