@@ -21,3 +21,10 @@ def first_wa(array)
     end
   end
 end
+
+def remove_non_strings(array)
+  array.delete_if do |el|
+    el.class != String
+  end
+  array
+end
