@@ -10,5 +10,6 @@ def contain_a(tools)
       return tool
     else
       tool += 1
+    end
   end
 end
