@@ -3,3 +3,9 @@ def begins_with_r(tools)
     tool.start_with?("r")
   end
 end
+
+def contain_a(tools)
+  tools.all? do |tool|
+    tool.contain?("a")
+  end
+end
