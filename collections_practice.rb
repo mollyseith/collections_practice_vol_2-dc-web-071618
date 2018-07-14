@@ -48,3 +48,19 @@ def find_cool(cool)
     [cool[1]]
   end
 end
+
+def organize_schools(schools)
+  ret = []
+  schools.values.to_a.each do |value|
+    ret << value.values
+  end
+  school_array = ret.flatten.uniq.sort
+  h1 = {schools.to_a[0][1].values[0] => [schools.to_a[0][0], schools.to_a[1][0], schools.to_a[4][0]]}
+  h2 = {school_array[0] => [schools.to_a[3][0]]}
+  h3 = {school_array[2] => [schools.to_a[2][0], schools.to_a[5][0]]}
+  h = {}
+  h.merge!(h1)
+  h.merge!(h2)
+  h.merge!(h3)
+  h
+end
