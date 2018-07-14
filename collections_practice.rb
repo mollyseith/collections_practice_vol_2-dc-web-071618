@@ -21,4 +21,3 @@ def first_wa(array)
     end
   end
 end
-  
