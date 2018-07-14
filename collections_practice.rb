@@ -6,6 +6,9 @@ end
 
 def contain_a(tools)
   tools.all? do |tool|
-    tool.contain?("a")
+    if tool.contain?("a")
+      return tool
+    else
+      tool += 1
   end
 end
