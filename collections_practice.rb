@@ -13,4 +13,12 @@ def contain_a(array)
   end
   as
 end
-        
+
+def first_wa(array)
+  array.find do |el|
+    if el[0] == "w" && el[1] == "a"
+      el
+    end
+  end
+end
+  
